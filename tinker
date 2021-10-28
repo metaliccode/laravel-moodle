@@ -1,0 +1,14 @@
+Category::create([
+    'category_name' => 'Programing Desktop',
+    'slug' => 'programing-Desktop',
+])
+
+Course::create([
+    'category_id' => 2,
+    'coursename' => 'flutter',
+    'shortname' => 'F',
+    'description' => 'lorasdhfghjags asdfasdfaf'
+])
+
+$course = Course::first()
+$course->category->category_name
